@@ -11,3 +11,14 @@ datasource db {
   url               = env("DATABASE_URL")
   shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
 }
+
+model Employee {
+  id      Int     @id @default(autoincrement())
+  name    String
+  age     Int
+  gender  String
+  address String
+  role    String
+  salary  Int
+  diploma Boolean
+}
