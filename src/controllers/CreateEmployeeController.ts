@@ -13,6 +13,8 @@ class CreateEmployeeController {
         const employee = await createEmployeeService.execute({
             name, age, gender, address, role, salary, diploma
         })
+
+        return response.json(employee)
     }
 }
 
