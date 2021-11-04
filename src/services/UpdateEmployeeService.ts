@@ -18,7 +18,7 @@ class UpdateEmployeeService {
         const prisma = new PrismaClient()
 
         const employee = await prisma.employee.update({
-            where: { id: Number(id) },
+            where: { id: id },
             data: {
                 name: name,
                 age: age,

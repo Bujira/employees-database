@@ -7,7 +7,7 @@ class ListEmployeesController {
 
     async handle(request: Request, response: Response) {
 
-        const listEmployeesService = new ListEmployeesService
+        const listEmployeesService = new ListEmployeesService()
 
         const employee = await listEmployeesService.execute()
 
